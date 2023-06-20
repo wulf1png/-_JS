@@ -1,0 +1,474 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="CSS.css">
+    <title>Практическая работа № 3, Никитин И.П.</title>
+</head>
+<body>
+    <div class="clrCodesMain" id="table of contents" >
+        <div class="clrCodesMainInn">
+            <div class="clrCodesMenu">
+                <div class="clrCodesLogo">
+                    <a class="logo" title="Основы JavaScript"><img src="Logo (2).png" width="300" height="90" alt="http://localhost:57209/Index.html"></a>
+                </div>
+                <div class="clrCodesTopRight">
+                    <h1 class="h1">Основы JavaScript</h1>
+                    <div class="adOne">
+                    </div>
+                    <div class="name" id="welcome">
+                        <label>Участник курса</label>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <ul class="nav">
+                    <li><a href="#table of contents">Главная</a></li>
+                    <li><a href="#general information">Общие сведения</a></li>
+                    <li><a href="#JS features">Возможности JS</a></li>
+                    <li><a href="#JS testing">Тестирование JS</a></li>
+                </ul>
+            </div>
+            <div class="texts1">
+                <h2>
+                    JavaScript — это язык управления элементами на сайте. Он умеет красить кнопки, запускать анимации, загружать эффекты, и всё это — без перезагрузки страницы. <br />
+                    JavaScript появился в далёкие девяностые, когда интернет был совсем юным и состоял в основном из текста и гиперссылок. <br />
+                    HTML задает разметку сайта, CSS отвечает за внешний вид, а JavaScript все это оживляет. <br />
+                    Сейчас JavaScript — единственный язык программирования для браузеров.  <br />
+                    Веселье весельем, но JavaScript — это серьёзный и мощный язык, на котором можно не только красивые анимации рисовать, но и писать сложные программы для бизнеса.<br />
+                    Чтобы написать первый скрипт, не нужно тратить время на установку виртуальной машины и разбираться в типах данных.<br />
+                    Всё самое интересное и полезное Вы сможете узнать на данном сайте.
+                </h2>
+            </div>
+            <div>
+                <div href="#" class="arrow"></div>
+                <div class="txt">
+                    <span>ДАЛЕЕ</span>
+                </div>
+                <p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </p>
+            </div>
+            <div class="Oglav" id="general information">
+                <h3>
+                    Общие сведения
+                </h3>
+            </div>
+            <div class="Sved">
+                <h2 class="texts1">Почему JavaScript?</h2>
+                <p class="p">
+                    JavaScript – это язык программирования, который используют разработчики для создания интерактивных веб-страниц. Функции JavaScript могут улучшить удобство взаимодействия пользователя с веб-сайтом: от обновления ленты новостей в социальных сетях и до отображения анимации и интерактивных карт. JavaScript является языком программирования при разработки скриптов для выполнения на стороне клиента, что делает его одной из базовых технологий во всемирной сети Интернет. Например, карусель изображения, выпадающее по клику меню и динамично меняющиеся цвета элементов на веб-странице, которые вы видите во время просмотра страниц в Интернете, выполнены при помощи JavaScript.
+                </p>
+                <h2 class="texts1">Как работает JavaScript?</h2>
+                <p class="p">
+                    Все языки программирования работают путем перевода английского синтаксиса в машинный код, который затем выполняет операционная система. JavaScript в широком смысле можно отнести к категории скриптовых или интерпретируемых языков. Код JavaScript интерпретируется, то есть непосредственно переводится в код машинного языка движком JavaScript. В других языках программирования компилятор обрабатывает весь код в машинный на отдельном этапе. Таким образом, все скриптовые языки являются языками программирования, но не все языки программирования являются скриптовыми.
+                </p>
+                <h2 class="texts1">Что такое библиотеки JavaScript?</h2>
+                <p class="p">
+                    Библиотеки JavaScript – это коллекции предварительно написанных фрагментов кода, которые веб-разработчики могут повторно использовать для выполнения стандартных функций JavaScript. Код библиотеки JavaScript подключается к остальному коду проекта по мере необходимости. Если вы думаете о коде приложения JavaScript как о доме, то библиотеки JavaScript – это как готовая мебель, которую разработчики могут использовать для улучшения его функциональности.
+                </p>
+                <h2 class="texts1">Что такое фреймворки JavaScript?</h2>
+                <p class="p">
+                    Как и библиотеки JavaScript, фреймворки JavaScript представляют собой набор предварительно написанных фрагментов кода, которые выполняют различные функции и могут быть использованы повторно. Однако если библиотеки JavaScript – это специализированный инструмент для использования по требованию, то фреймворки JavaScript – это полный набор инструментов, который помогает сформировать и организовать любое веб-приложение. Если представить код приложения JavaScript в виде дома, то фреймворк JavaScript – это чертеж, по которому он строится.
+                </p>
+                <h2 class="texts1">Переменные</h2>
+                <p class="p">
+                    Для хранения данных в программе используются переменные, они предназначены для хранения каких-нибудь временных данных или таких данных, которые в процессе работы могут менять свое значение.
+                    Для создания переменных применяются ключевые слова var и let.
+                    Каждая переменная имеет имя, оно представляет собой произвольный набор алфавитно-цифровых символов, знака подчеркивания _ или знака доллара $, причем названия не должны начинаться с цифровых символов. То есть можно использовать в названии буквы, цифры, подчеркивание. Однако все остальные символы запрещены.
+                    Также нельзя давать переменным такие имена, которые совпадают с зарезервированными ключевыми словами. В JavaScript не так много ключевых слов, поэтому данное правило несложно соблюдать. Например, название for будет некорректным, так как for - ключевое слово в JavaScript.
+                </p>
+                <h2 class="texts1">Константы</h2>
+                <p class="p">
+                    С помощью ключевого слова const можно определить константу, которая, как и переменная, хранит значение, однако это значение не может быть изменено.<br />
+                    Если попробовать изменить ее значение, то возникнет ошибка.<br />
+                    Также стоит отметить, что поскольку нельзя изменить значение константы, то константа должна быть инициализирована, то есть при ее определении необходимо предоставить ей начальное значение. Если этого не сделать, возникнет ошибка.
+                </p>
+                <h2 class="texts1">Типы данных</h2>
+                <p class="p">
+                    Все используемые данные в JavaScript имеют определенный тип. В JavaScript имеется пять примитивных типов данных: <br />
+                    <br />
+                    String: представляет строку <br />
+
+                    Number: представляет числовое значение <br />
+
+                    Boolean: представляет логическое значение true или false <br />
+
+                    undefined: указывает, что значение не установлено <br />
+
+                    null: указывает на неопределенное значение <br />
+                    <br />
+                    Все данные, которые не попадают под вышеперечисленные пять типов, относятся к типу object. <br />
+                </p>
+                <h2 class="texts1">Логические операторы</h2>
+                <p class="p">
+                    В языке программирования JavaScript есть пять логических операторов || (или), && (и), ! (не), менее известный ?? оператор нулевого слияния, который еще относят к частному случаю оператора || (или) и тернарный оператор. <br />
+                    Логические операторы используются для комбинирования булевых значений - true (истина) и false (ложь) и часто применяются в сочетании с операторами отношений (>, >=, <, <=, ==, !=), объединяя два и более выражения в одно более сложное. <br />
+                        Сразу стоит уточнить, что логические операторы могут применяться к значениям любых типов, результат также может иметь различный тип. Но нужно помнить, что все значения в JavaScript являются либо true либо false.
+                </p>
+                <h2 class="texts1">Циклы</h2>
+                <p class="p">
+                    Циклы – это простой способ для многократного выполнения одних и тех же действий (кода). <br />
+                    <br />
+                    При этом однократное выполнения кода в цикле называется итерацией.<br />
+                    <br />
+                    В JavaScript существуют различные виды циклов, но все они, по сути, делают одно и тоже. Просто с помощью одних циклов более просто решаются одни задачи, с помощью других – иные:<br />
+                    <br />
+                    for;<br />
+                    while;<br />
+                    do...while;<br />
+                    for...in;<br />
+                    for...of (появился в версии ES6).<br />
+                </p>
+                <h2 class="texts1">Функции</h2>
+                <p class="p">
+                    Функция — это самостоятельный блок кода, который можно, один раз объявив, вызывать столько раз, сколько нужно. Функция может, хотя это и необязательно, принимать параметры. Функции возвращают единственное значение. <br />
+                    <br />
+                    Функции в JavaScript являются объектами, если точнее, то они являются объектами типа Function. Их ключевое отличие от обычных объектов, дающее им те исключительные возможности, которыми они обладают, заключается в том, что функции можно вызывать. <br />
+                    <br />
+                    Кроме того, функции в JavaScript называют «функциями первого класса» так как их можно назначать переменным, их можно передавать другим функциям в качестве аргументов, их можно возвращать из других функций. <br />
+                </p>
+                <h2 class="texts1">Массивы</h2>
+                <p class="p">
+                    Массив – это упорядоченная коллекция данных.<br />
+                    <br />
+                    Объявление:<br />
+                    квадратные скобки (обычно) let arr = [item1, item2...];<br />
+                    new Array (очень редко)<br />
+                    <br />
+                    Свойство length отражает длину массива или, если точнее, его последний цифровой индекс плюс один. Длина корректируется автоматически методами массива.<br />
+                    <br />
+                    Для добавления/удаления элементов:
+                    <br />
+                    push (...items) – добавляет элементы в конец,<br />
+                    pop() – извлекает элемент с конца,<br />
+                    shift() – извлекает элемент с начала,<br />
+                    unshift(...items) – добавляет элементы в начало.<br />
+                    splice(pos, deleteCount, ...items) – начиная с индекса pos, удаляет deleteCount элементов и вставляет items.<br />
+                    slice(start, end) – создаёт новый массив, копируя в него элементы с позиции start до end (не включая end).<br />
+                    concat(...items) – возвращает новый массив: копирует все члены текущего массива и добавляет к нему items. Если какой-то из items является массивом, тогда берутся его элементы.<br />
+                    Для поиска среди элементов:<br />
+                    <br />
+                    indexOf/lastIndexOf(item, pos) – ищет item, начиная с позиции pos, и возвращает его индекс или -1, если ничего не найдено.
+                    includes(value) – возвращает true, если в массиве имеется элемент value, в противном случае false.
+                    find/filter(func) – фильтрует элементы через функцию и отдаёт первое/все значения, при прохождении которых через функцию возвращается true.
+                    findIndex похож на find, но возвращает индекс вместо значения.<br />
+                    <br />
+                    Для перебора элементов:<br />
+                    <br />
+                    forEach(func) – вызывает func для каждого элемента. Ничего не возвращает.<br />
+                    <br />
+                    Для преобразования массива:
+                    <br />
+                    map(func) – создаёт новый массив из результатов вызова func для каждого элемента.<br />
+                    sort(func) – сортирует массив «на месте», а потом возвращает его.<br />
+                    reverse() – «на месте» меняет порядок следования элементов на противоположный и возвращает изменённый массив.<br />
+                    split/join – преобразует строку в массив и обратно.<br />
+                    reduce(func, initial) – вычисляет одно значение на основе всего массива, вызывая func для каждого элемента и передавая промежуточный результат между вызовами.<br />
+                </p>
+                <h2 class="texts1">Замыкания</h2>
+                <p class="p">
+                    Замыкание (closure) представляют собой конструкцию, когда функция, созданная в одной области видимости, запоминает свое лексическое окружение даже в том случае, когда она выполняет вне своей области видимости.<br />
+                    <br />
+                    Замыкание технически включает три компонента:<br />
+                    <br />
+                    Внешняя функция, которая определяет некоторую область видимости и в которой определены некоторые переменные - лексическое окружение;<br />
+                    <br />
+                    Переменные (лексическое окружение), которые определены во внешней функции;<br />
+                    <br />
+                    Вложенная функция, которая использует эти переменные.<br />
+                </p>
+                <p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </p>
+                <div class="Oglav" id="JS features">
+                    <h3>
+                        Возможости JavaScript
+                    </h3>
+                </div>
+            </div>
+            <div class="navi" id="navi">
+                <ul class="nav">
+                    <li><input type="button" class="button" value="S треугольника" onclick="showTriangle()"></li>
+                    <li><input type="button" class="button" value="Сравнение строк" onclick="showString()"></li>
+                    <li><input type="button" class="button" value="Массив" onclick="showMass()"></li>
+                    <li><input type="button" class="button" value="Таймер" onclick="showTimer()"></li>
+                </ul>
+            </div>
+            <p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </p>
+            <p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </p>
+            <p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </p>
+            <p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </p>
+            <p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </p>
+            <p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </p>
+            <p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </p>
+            <p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </p>
+
+            <div class="content" style="visibility: hidden;" id="Triangle">
+                <h4>S треугольника</h4>
+                <form name="form">
+                    Сторона 1 <input type="text" size="8" maxlength="8" name="st1"> Сторона 2 <input type="text" size="8" maxlength="8" name="st2"> Сторона 3 <input type="text" size="8" maxlength="8" name="st3"><br><br>
+                    <input type="button" value="Вычислить" onClick="areaOfTriangle(form);">
+                    <input type="reset" value="Отменить"> <br> <br>Результат <input type="text" size="8" maxlength="8" name="res">
+                </form>
+                <p id="answer"></p>
+                <br>
+                <br>
+                <br>
+                <p class="pp">
+                    Код JS:<br> <br>
+                    function areaOfTriangle(obj) {<br>
+                    var a = 1 * obj.st1.value;<br>
+                    var b = 1 * obj.st2.value;<br>
+                    var c = 1 * obj.st3.value;<br>
+                    var p = (a + b + c) / 2;<br>
+                    var s = Math.sqrt(p * (p - a) * (p - b) * (p - c));<br>
+                    obj.res.value = s;<br>
+                </p>
+
+            </div>
+            <div class="content" style="visibility: hidden;" id="String">
+                <h4>Сравним строки</h4>
+                <form>
+                    <p>
+                        Строка 1
+                        <Input type="text" id="string1">
+                    </p>
+                    <p>
+                        Строка 2
+                        <Input type="text" id="string2">
+                    </p>
+                    <p>
+                        <input type="button" value="Сравнить" onclick="compareString()">
+                    </p>
+                </form>
+                <p id="ans1"></p>
+                <br>
+                <br>
+                <br>
+                <p class="pp">
+                    Код JS:<br> <br>
+                    function compareString() {<br>
+                    let a = document.getElementById("string1");<br>
+                    let b = document.getElementById("string2");<br>
+                    if (a.value == b.value) {<br>
+                    document.getElementById("ans1").innerHTML = 'true';<br>
+                    } else {<br>
+                    document.getElementById("ans1").innerHTML = 'false';<br>
+                    }<br>
+                    }<br>
+                </p>
+            </div>
+            <div class="content" style="visibility: hidden;" id="Mass">
+                <h4>Максимальное и минимальное значение в массиве из 5 элементов</h4>
+                <form id="formid">
+                    <p>
+                        Введите массив
+                        <input class="input" type="text">
+                        <input class="input" type="text">
+                        <input class="input" type="text">
+                        <input class="input" type="text">
+                        <input class="input" type="text">
+                    </p>
+                </form>
+                <input type="button" value="Отправить" onclick="calculateMass()">
+                <p id="ans2a"></p>
+                <p id="ans2b"></p>
+                <br>
+                <br>
+                <br>
+                <p class="pp">
+                    Код JS:<br> <br>
+                    function calculateMass() {<br>
+                    let arr = [];<br>
+                    let form = document.getElementById("formid");<br>
+                    let els = form.getElementsByTagName("input");<br>
+                    for (let i = 0; i < els.length; i++) {<br>
+                    let a = [];<br>
+                    a[0] = els[i].name;<br>
+                    a[0] = els[i].value;<br>
+                    arr[i] = a;<br>
+                    }<br>
+                    document.getElementById("ans2a").innerHTML = "Max: " + Math.max.apply(null, arr);<br>
+                    document.getElementById("ans2b").innerHTML = "Min: " + Math.min.apply(null, arr);<br>
+                </p>
+            </div>
+            <div class="content" style="visibility: hidden;" id="Timer">
+                <h2>Таймер</h2>
+                <p>
+                    <span id="seconds">00</span><span class="dots">:</span><span id="tens">00</span>
+                </p>
+                <button id="button-start">Начать</button>
+                <button id="button-stop">Стоп</button>
+                <button id="button-reset">Сброс</button>
+                <br>
+                <br>
+                <br>
+                <p class="pp">
+                    <br>
+                    Код JS:<br> <br>
+                    window.onload = function () {<br>
+                    var seconds = 00;<br>
+                    var tens = 00;<br>
+                    var appendSeconds = document.getElementById("seconds");<br>
+                    var appendTens = document.getElementById("tens");<br>
+                    var buttonStart = document.getElementById("button-start");<br>
+                    var buttonStop = document.getElementById("button-stop");<br>
+                    var buttonReset = document.getElementById("button-reset");<br>
+                    var Interval;<br>
+                    buttonStop.onclick = function () {<br>
+                    clearInterval(Interval);}<br>
+                    buttonStart.onclick = function () {<br>
+                    Interval = setInterval(startTimer, 10);}
+                    buttonReset.onclick = function () {<br>
+                    clearInterval(Interval);<br>
+                    tens = "00";<br>
+                    seconds = "00";<br>
+                    appendTens.innerHTML = tens;<br>
+                    appendSeconds.innerHTML = seconds;}<br>
+                    function startTimer() {<br>
+                    tens++;<br>
+                    if (tens < 9) {<br>
+                    appendTens.innerHTML = "0" + tens;}<br>
+                    if (tens > 9) {<br>
+                    appendTens.innerHTML = tens;<br>
+                    }<br>
+                    }<br>
+                    }<br>
+                </p>
+            </div>
+            <script type="text/javascript" src="JS.js"></script>
+
+            <div class="Oglav" id="JS testing">
+                <h3>
+                    Тестирование по JavaScript
+                </h3>
+            </div>
+
+            <div class="task">
+                <p class="p">Какие переменные вы знаете(через запятую)?<br><br><input class="text-field" type='text' id='z_1'></p><br>
+                <p class="p">Что такое JavaScript?<br><br><input class="text-field" type='text' id='z_2'></p><br>
+                <p class="p">Что такое библиотеки JavaScript?<br><br><input class="text-field" type='text' id='z_3'></p><br>
+                <p class="p">Что такое фреймворки JavaScript?<br><br><input class="text-field" type='text' id='z_4'></p><br>
+                <p class="p">С помощью какого ключевого слова можно определить константу?<br><br><input class="text-field" type='text' id='z_5'></p><br>
+                <p class="p">Какие 5 примитивных типов данных есть в JS (через зяпатую)?<br><br><input class="text-field" type='text' id='z_6'></p><br>
+                <p class="p">Сколько в языке программирования JavaScript логических операторов?<br><br><input class="text-field" type='text' id='z_7'></p><br>
+                <p class="p">Что такое "Массив"?<br><br><input class="text-field" type='text' id='z_8'></p><br>
+                <p class="p">Оператор !<br><br><input class="text-field" type='text' id='z_9'></p><br>
+                <p class="p">Какие циклы строются из одного слова?<br><br><input class="text-field" type='text' id='z_10'></p><br>
+                <br>
+                <br>
+                <button onclick='proverit()' class="bt">Проверить</button>
+                <div id='rezultat' class="p"></div>
+            </div>
+            <br>
+            <br>
+            <div class="end">
+                <h1> Вы завершили курс по JavaScript!</h1>
+                <br>
+                <button id="myBtn" class="bt">Нажми на меня</button>
+
+                <div id="myModal" class="modal">
+                    <div class="close">&times;>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="top_name"><p id="top_name"></p></div> 
+                            <h2>Вы завершили курс по JS!</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p class="ppp">С нами вы научились:</p>
+                            <p class="ppp">Понимать основы JavaScript (типы данных, операторы, циклы, условные констуркции, функции).</p>
+                            <p class="ppp">Понимать структуры данных и их организации (массив, список, стек, очередь, дерево и т.д.).</p>
+                            <p class="ppp">Реализовать достаточно простой алгоритм на языке программирования JavaScript.</p>
+                            <p class="ppp">Удачи в новых начинаниях!</p>
+                            <br>
+                            <p class="ppp">Дата окончания курса:</p>
+                            <div class="current_date_time_block" id="current_date_time_block">
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    <script type="text/javascript" src="JS2.js"></script>
+</body>
+</html>
